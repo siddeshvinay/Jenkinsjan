@@ -2,16 +2,24 @@ pipeline{
   agent any
 stages{
     stage('Build'){
+    steps{
         echo  "build is successfull"
     }
+    }
     stage('Test'){
+    steps{
         echo "Test the build"
     }
+    }
     stage('Deploy'){
+    steps{
         echo "Deploy to env"
     }
+    }
     stage('Release'){
+    steps{
         echo "Release to production"
+    }
     }
 }
 }
